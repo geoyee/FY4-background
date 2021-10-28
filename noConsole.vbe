@@ -1,0 +1,2 @@
+set ws=wscript.createobject("wscript.shell")
+ws.run "fy_script.bat /start",0
