@@ -41,8 +41,8 @@ def get_and_deal_img():
     fy_img[0:174, 0:447, :] = 0
     bk_img[0:174, 0:447, :] = 0
     # 右下水印
-    fy_img[1970:2198, 1970:2198, :] = 0
-    bk_img[1970:2198, 1970:2198, :] = 0
+    fy_img[1970:2198, 1750:2198, :] = 0
+    bk_img[1970:2198, 1750:2198, :] = 0
     # 扩展壁纸到电脑显示器大小
     bk_img = Image.fromarray(np.uint8(bk_img))
     bk_img = bk_img.resize((720, 720), Image.ANTIALIAS)
